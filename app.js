@@ -11,7 +11,7 @@ app.get('/', (request, response) => {
   response.send('<p style="color: red;">running through the field,on a rainy night you come upon a hole in the old barn wall  you have never seen before,rain has soacked through your coat and into your furr,cold,hungery and battered by the wind you scurry into this new found refuge , you try to squeez the water out of youre hat and coat but to no avail,the cold entensfy your hunger,you need to find something to eat. <br><a href=/intro>Inspect the tunnle</a></p>');
 });
 
-//introduce 
+//intro
 app.get('/intro', (request, response) => {
   response.send('<p style="color: red;">you raise your nose to catch a sent, you smell something, is that cheese ? you ask your self. you see a long tunnel covered in cobwebs with insects that has been long stuck to it , you notice some of the insects are freshely wraped and still wriggling,there is a spider near by,and from what you can tell its a big one<br><a href=/proceed>Move down the tunnle</a></p>');
 })
