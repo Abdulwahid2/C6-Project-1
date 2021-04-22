@@ -6,12 +6,12 @@ let app = express();
 
 const port = 3000 || process.env.PORT
 
-//intro
+// 
 app.get('/', (request, response) => {
   response.send('<p style="color: red;">running through the field,on a rainy night you come upon a hole in the old barn wall  you have never seen before,rain has soacked through your coat and into your furr,cold,hungery and battered by the wind you scurry into this new found refuge , you try to squeez the water out of youre hat and coat but to no avail,the cold entensfy your hunger,you need to find something to eat. <br><a href=/intro>Inspect the tunnle</a></p>');
 });
 
-//introduce your options here + add buttons(inspect+proceed)
+//introduce 
 app.get('/intro', (request, response) => {
   response.send('<p style="color: red;">you raise your nose to catch a sent, you smell something, is that cheese ? you ask your self. you see a long tunnel covered in cobwebs with insects that has been long stuck to it , you notice some of the insects are freshely wraped and still wriggling,there is a spider near by,and from what you can tell its a big one<br><a href=/proceed>Move down the tunnle</a></p>');
 })
@@ -19,8 +19,7 @@ app.get('/intro', (request, response) => {
 app.get('/proceed', (request, response) => {
   response.send('<p style="color: red;">you scurry quitely down the tunnle, the sound of rain is a distant noise,battering the walls in anger,the wind mad, howling and thrashing looking to abuse anyone and anything in its path, a feel of dread creeps up inside you, like you are being watched as soon as you clear the tunnel, a rock falls right on top of you,as if it was meant to crush you!, you are lucky to get out of the way in time <br><a href=/scene1>Explore your surroundings</a></p>');
 })
-//stage1 'by fire and cheese'
-//options here , go for the small or large box, adding buttons will help right about now (if else function here )
+//scene1 
 app.get('/scene1', (request, response) => {
   response.send('<p style="color: red;">you look around and sniff the air,but its dark, and mice eventhough are nocturnal they have bad eyesight and you cant see anything but you can smell the cheese again,the smell is closer,you pin its direction and head that way , as  you get closer to the smell, you can make out 2 box shapes, one is small with a cover on it, the other is larger reflecting light when lighting strikes <br><a href=/smallbox>head to the smaller box</a><br><a href=/bigbox>head to the bigger box</a></p>');
 });
